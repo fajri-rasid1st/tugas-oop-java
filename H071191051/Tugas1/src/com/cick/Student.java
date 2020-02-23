@@ -37,8 +37,7 @@ class Student {
         String[] name = getfullName().split(" ");
         String name_2 = "";
         for (int i = 0 ; i < name.length-1 ; i++) {
-            int j = 0;
-            name_2 = name_2 + name[i].charAt(j);
+            name_2 = name_2 + name[i].charAt(0);
         }
         String fixEmail = name[name.length-1].toLowerCase() + name_2.toLowerCase() + String.valueOf(registerYear).substring(2, 4) + facultyMap.get(getFaculty()).toLowerCase() + "@student.unhas.ac.id";
         this.email = fixEmail;
@@ -77,9 +76,9 @@ class Student {
                 fixName += fullName.charAt(i);
             }
         }
-        return fixName.toString();
+        return fixName;
     }
     public void description() {
-        System.out.printf("Nama \t\t: %s\nNIM \t\t: %s\nEmail Mahasiswa : %s\nFakultas \t: %s\nDepartemen \t: %s\nProgram Studi \t: %s",getfullName(),getId(),getEmail(),getFaculty(),getDepartment(),getMajor());
+        System.out.printf("Nama \t\t: %s\nNIM \t\t: %s\nEmail Mahasiswa : %s\nFakultas \t: %s\nDepartemen \t: %s\nProgram Studi \t: %s \n\n",getfullName(),getId(),getEmail(),getFaculty(),getDepartment(),getMajor());
     }
 }
