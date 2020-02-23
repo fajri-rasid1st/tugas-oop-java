@@ -2,7 +2,7 @@ package no3;
 
 class Lampu {
     boolean blueIson;
-    Boolean redIsOn;
+    boolean redIsOn;
 
     void turnOn() {
         blueIson = true;
