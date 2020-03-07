@@ -21,7 +21,7 @@ class Login {
     public void auth(String userName, String password) {
         try {
             user = dataSource.getUser(userName);
-            if (user.verifyPassword(password)) {
+            if (user.getPassword().equals(password)) {
                 userDetail = dataSource.getUserDetail(user.getId());
             } else {
                 System.out.println("Invalid password!");
