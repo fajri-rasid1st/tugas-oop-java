@@ -1,0 +1,21 @@
+
+======== BANGUN DATAR ========
+1. Persegi
+2. Persegi Panjang
+3. Segitiga
+4. Lingkaran
+5. Jajar Genjang
+6. Belah Ketupat
+7. Layang-layang
+8. Trapesium
+
+======== BANGUN RUANG ========
+9.  Kubus
+10. Balok
+11. Prisma Segitiga
+12. Tabung
+13. Kerucut
+14. Bola
+15. Limas Segiempat
+
+0. Exit
