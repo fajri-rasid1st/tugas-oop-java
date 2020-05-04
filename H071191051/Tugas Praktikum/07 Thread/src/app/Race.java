@@ -19,9 +19,10 @@ public class Race {
     }
 
     public void result() {
-        while (true) {
+        while (isRaceStarted) {
             if (position.size() == totalRunner) {
-                System.out.println("\nThe race is over.");
+                System.out.println("The race is over.\n");
+
                 String[] arr = { "1st : ", "2nd : ", "3rd : " };
                 int result = 0;
 
