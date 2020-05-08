@@ -1,0 +1,7 @@
+Pisang ijo;Rp.10.000,00;Total pesanan
+Cendol;Rp.8.000,00;Total pesanan
+Es buah;Rp.15.000,00;Total pesanan
+Jalankote;Rp.7.000,00;Total pesanan
+Air mineral;Rp.3.000,00;Total pesanan
+Nasi kuning;Rp.12.000,00;Total pesanan
+Kolak;Rp.20.000,00;Total pesanan
