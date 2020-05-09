@@ -32,7 +32,7 @@ import javafx.stage.StageStyle;
 
 public class App extends Application {
     Stage mainStage;
-    int money = 50000;
+    int money = 100000;
     String[] foodName = new String[7];
     ConfirmClose cClose = new ConfirmClose();
     int[] foodPrice = { 10000, 8000, 15000, 7000, 3000, 12000, 20000 };
@@ -136,7 +136,7 @@ public class App extends Application {
         Group root = new Group(vb, titleBackground, image, scBar);
 
         // scene
-        Scene scene = new Scene(root, 380, 650, Color.valueOf("#f7f7f7"));
+        Scene scene = new Scene(root, 380, 650, Color.valueOf("#134f5c"));
         scene.getStylesheets().add(getClass().getResource("Style.css").toExternalForm());
 
         // stage
@@ -214,7 +214,7 @@ public class App extends Application {
 
                 if (result.get() == ButtonType.OK) {
                     Transaction succesfull = new Transaction();
-                    succesfull.display("Pesanan diterima", "Terima kasih telah memesan");
+                    succesfull.display("Terima kasih telah memesan");
                     for (int i = 0; i < order.length; i++) {
                         order[i].resetOrder();
                     }
@@ -223,11 +223,11 @@ public class App extends Application {
                 }
             } else {
                 Transaction failed_1 = new Transaction();
-                failed_1.display("Gagal memesan", "Uang anda tidak cukup!");
+                failed_1.display("Uang anda tidak cukup!");
             }
         } else {
             Transaction failed_2 = new Transaction();
-            failed_2.display("Pesanan tidak ada", "Anda belum memesan apa-apa!");
+            failed_2.display("Anda belum memesan apa-apa!");
         }
     }
 }

@@ -8,7 +8,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -18,8 +17,6 @@ public class ConfirmClose {
 
     public boolean display() throws IOException {
         Stage window = new Stage();
-        window.initModality(Modality.APPLICATION_MODAL);
-        window.setTitle("Confirm Close");
 
         Label label = new Label();
         label.setText("Anda yakin ingin keluar?");

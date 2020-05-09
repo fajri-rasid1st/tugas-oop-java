@@ -1,7 +1,5 @@
 package tugas1;
 
-import java.io.FileNotFoundException;
-
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,10 +11,9 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Transaction {
-    public void display(String title, String message) throws FileNotFoundException {
+    public void display(String message) {
         Stage window = new Stage();
         window.initModality(Modality.APPLICATION_MODAL);
-        window.setTitle(title);
 
         Label label = new Label();
         label.setText(message);
