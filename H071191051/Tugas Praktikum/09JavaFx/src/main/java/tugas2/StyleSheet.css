@@ -1,0 +1,86 @@
+#region {
+	-fx-border-radius: 10;
+	-fx-border-style: solid;
+	-fx-border-width: 3;
+	-fx-border-color: rgb(238, 238, 238);
+	-fx-min-width: 350;
+	-fx-min-height: 220;
+	-fx-max-width: 350;
+	-fx-max-height: 220;
+}
+
+#closeButton {
+	-fx-font-family: "calibri";
+	-fx-font-size: 18;
+	-fx-font-weight: bold;
+	-fx-background-color: #134f5c;
+	-fx-background-radius: 10;
+	-fx-text-fill: rgb(238, 238, 238);
+}
+
+#handlingButton {
+	-fx-border-width: 2;
+	-fx-border-radius: 10;
+	-fx-border-insets: -2;
+	-fx-border-color: rgb(238, 238, 238);
+	-fx-font-family: "calibri";
+	-fx-font-size: 18;
+	-fx-font-weight: bold;
+	-fx-background-color: #134f5c;
+	-fx-background-radius: 9;
+	-fx-text-fill: rgb(238, 238, 238);
+}
+
+#closeLabel_1 {
+	-fx-font-family: "Trebuchet MS";
+	-fx-font-size: 16;
+	-fx-font-weight: bold;
+}
+
+#closeLabel_2 {
+	-fx-font-family: "calibri";
+	-fx-font-size: 15;
+}
+
+#titleData {
+	-fx-font-family: "Trebuchet MS";
+	-fx-font-size: 26;
+	-fx-font-weight: bold;
+	-fx-text-fill: rgb(228, 228, 228);
+}
+
+#radioData {
+	-fx-font-family: "calibri";
+	-fx-font-size: 16;
+	-fx-font-weight: bold;
+	-fx-text-fill: rgb(228, 228, 228);
+	-fx-border-color: rgb(228, 228, 228);
+	-fx-color: #e09b00;
+	-fx-border-insets: -18;
+	-fx-border-radius: 6;
+	-fx-border-width: 2;
+}
+
+#labelBiodata {
+	-fx-font-family: "calibri";
+	-fx-font-size: 21;
+	-fx-font-weight: bold;
+	-fx-text-fill: rgb(228, 228, 228);
+}
+
+#checkBox {
+	-fx-font-family: "calibri";
+	-fx-font-size: 18;
+	-fx-font-weight: bold;
+	-fx-text-fill: rgb(228, 228, 228);
+	-fx-color: #e09b00;
+}
+
+#textField {
+	-fx-font-family: "calibri";
+	-fx-font-size: 14;
+	-fx-font-weight: bold;
+	-fx-background-color: transparent;
+	-fx-text-fill: rgb(228, 228, 228);
+	-fx-prompt-text-fill: rgb(228, 228, 228);
+}
