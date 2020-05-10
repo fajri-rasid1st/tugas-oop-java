@@ -29,7 +29,8 @@ public class GroupApplication extends Application {
     private Scene scene;
     private ImageView[] icons = new ImageView[7];
     private ConfirmClose confirmClose = new ConfirmClose();
-    AlertBox alert = new AlertBox();
+    private DataHandling dataHandle = new DataHandling();
+    private AlertBox alert = new AlertBox();
     File file = new File("src\\main\\java\\tugas2\\Group.txt");
 
     public static void main(String[] args) {
@@ -80,19 +81,19 @@ public class GroupApplication extends Application {
             bioMenu.setTextName(bioMenu.getTf_2().getText());
 
             if (bioMenu.getTextNim().isBlank() || bioMenu.getTextNim().isEmpty()) {
-                alert.display("Silahkan masukkan NIM anda", icons[4]);
+                alert.display("Silahkan masukkan NIM anda", icons[1]);
             } else if (bioMenu.getTextName().isBlank() || bioMenu.getTextName().isEmpty()) {
-                alert.display("Silahkan masukkan nama anda", icons[4]);
+                alert.display("Silahkan masukkan nama anda", icons[1]);
             } else if (bioMenu.getGender().equals("transgender")) {
-                alert.display("Hanya boleh memilih satu gender", icons[4]);
+                alert.display("Hanya boleh memilih satu gender", icons[1]);
             } else if (bioMenu.getGender().equals("tidak ada")) {
-                alert.display("Silahkan pilih gender anda", icons[4]);
+                alert.display("Silahkan pilih gender anda", icons[1]);
             } else if (gMenu.selectedGroupToggle() == null) {
-                alert.display("Silahkan pilih kelompok anda", icons[4]);
+                alert.display("Silahkan pilih kelompok anda", icons[1]);
             } else {
                 alert.display("Data anda berhasil disimpan", icons[5]);
                 try {
-                    DataHandling.addData(String.format("%s,%s,%s,%s.", bioMenu.getTextNim(), bioMenu.getTextName(),
+                    dataHandle.addData(String.format("%s;%s;%s;%s.", bioMenu.getTextNim(), bioMenu.getTextName(),
                             bioMenu.getGender(), gMenu.selectedGroupToggle()));
                 } catch (IOException e1) {
                     e1.printStackTrace();
@@ -112,10 +113,10 @@ public class GroupApplication extends Application {
         viewInfo.setLayoutY(367);
         viewInfo.setOnAction(e -> {
             try {
-                if (DataHandling.seeData().isBlank() || DataHandling.seeData().isEmpty()) {
-                    alert.display("Belum ada yang mendaftar", icons[4]);
+                if (dataHandle.seeData().isBlank() || dataHandle.seeData().isEmpty()) {
+                    alert.display("Belum ada yang mendaftar", icons[1]);
                 } else {
-                    alert.display("Nama pendaftar:\n" + DataHandling.seeData(), icons[4]);
+                    alert.display("Nama pendaftar:\n" + dataHandle.seeData(), icons[4]);
                 }
             } catch (IOException e1) {
                 e1.printStackTrace();

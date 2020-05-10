@@ -30,7 +30,7 @@ public class AlertBox {
         layout.getChildren().addAll(image, label, button);
         layout.setAlignment(Pos.CENTER);
 
-        Scene scene = new Scene(layout, 500, 360, Color.valueOf("#e6e6e6"));
+        Scene scene = new Scene(layout, 520, 380, Color.valueOf("#e6e6e6"));
         scene.getStylesheets().add(getClass().getResource("StyleSheet.css").toExternalForm());
 
         window.setScene(scene);
