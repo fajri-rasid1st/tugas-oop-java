@@ -1,10 +1,14 @@
 package tugas2;
 
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
@@ -29,8 +33,10 @@ public class AlertBox {
         VBox layout = new VBox(15);
         layout.getChildren().addAll(image, label, button);
         layout.setAlignment(Pos.CENTER);
+        layout.setBackground(
+                new Background(new BackgroundFill(Color.valueOf("#134f5c"), CornerRadii.EMPTY, Insets.EMPTY)));
 
-        Scene scene = new Scene(layout, 520, 380, Color.valueOf("#e6e6e6"));
+        Scene scene = new Scene(layout, 520, 380);
         scene.getStylesheets().add(getClass().getResource("StyleSheet.css").toExternalForm());
 
         window.setScene(scene);

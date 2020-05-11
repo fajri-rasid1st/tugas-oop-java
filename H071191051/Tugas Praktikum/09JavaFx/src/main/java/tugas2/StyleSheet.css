@@ -13,7 +13,7 @@
 	-fx-font-family: "calibri";
 	-fx-font-size: 18;
 	-fx-font-weight: bold;
-	-fx-background-color: #134f5c;
+	-fx-background-color: #e09b00;
 	-fx-background-radius: 10;
 	-fx-text-fill: rgb(238, 238, 238);
 }
@@ -33,12 +33,14 @@
 
 #closeLabel_1 {
 	-fx-font-family: "Trebuchet MS";
+	-fx-text-fill: rgb(238, 238, 238);
 	-fx-font-size: 16;
 	-fx-font-weight: bold;
 }
 
 #closeLabel_2 {
 	-fx-font-family: "calibri";
+	-fx-text-fill: rgb(238, 238, 238);
 	-fx-font-size: 15;
 }
 

@@ -2,7 +2,7 @@
 	-fx-font-family: "Trebuchet MS";
 	-fx-font-size: 16;
 	-fx-font-weight: bold;
-	-fx-text-fill: rgb(63, 63, 63);
+	-fx-text-fill: rgb(233, 233, 233);
 }
 
 #buttonClose {
@@ -11,11 +11,11 @@
 	-fx-font-weight: bold;
 	-fx-background-color: #dda918;
 	-fx-background-radius: 10;
-	-fx-text-fill: rgb(43, 43, 43);
+	-fx-text-fill: rgb(230, 230, 230);
 	-fx-border-width: 3;
 	-fx-border-radius: 11;
 	-fx-border-insets: -3;
-	-fx-border-color: rgb(43, 43, 43);
+	-fx-border-color: rgb(230, 230, 230);
 }
 
 #selectFile {

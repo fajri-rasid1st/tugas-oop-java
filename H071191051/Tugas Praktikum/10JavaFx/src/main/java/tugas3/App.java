@@ -95,7 +95,7 @@ public class App extends Application {
                     text.setText("Isi file tidak ada");
                 }
             } catch (IOException e1) {
-                e1.printStackTrace();
+                System.out.println("");
             }
         });
 

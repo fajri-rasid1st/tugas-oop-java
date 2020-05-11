@@ -7,13 +7,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class ConfirmClose {
 
-    static boolean answer;
+    private boolean answer;
 
     public boolean display() throws IOException {
         Stage window = new Stage();
@@ -42,15 +42,16 @@ public class ConfirmClose {
         layout.getChildren().addAll(label, yes, no);
         layout.setAlignment(Pos.CENTER);
 
-        Scene scene = new Scene(layout, 350, 140, Color.valueOf("#f5f5f5"));
-        scene.getStylesheets().add(getClass().getResource("Style.css").toExternalForm());
+        Scene sceneClose = new Scene(layout, 350, 140);
+        sceneClose.getStylesheets().add(getClass().getResource("Style.css").toExternalForm());
 
-        window.setScene(scene);
+        window.setScene(sceneClose);
         window.setX(505);
         window.setY(250);
         window.setResizable(false);
         window.setMaximized(false);
         window.setAlwaysOnTop(true);
+        window.initModality(Modality.APPLICATION_MODAL);
         window.initStyle(StageStyle.TRANSPARENT);
         window.showAndWait();
 

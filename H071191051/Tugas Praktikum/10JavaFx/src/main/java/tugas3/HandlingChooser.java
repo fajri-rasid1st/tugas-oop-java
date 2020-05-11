@@ -25,14 +25,18 @@ public class HandlingChooser {
 
     String readFile(File file) throws FileNotFoundException {
         String text = "";
-        Scanner sc = new Scanner(file, StandardCharsets.UTF_8.name());
+        try {
+            Scanner sc = new Scanner(file, StandardCharsets.UTF_8.name());
+            while (sc.hasNextLine()) {
+                text = text + sc.nextLine();
+                text += "\n";
+            }
 
-        while (sc.hasNextLine()) {
-            text = text + sc.nextLine();
-            text += "\n";
+            sc.close();
+        } catch (NullPointerException npe) {
+            System.out.println("");
         }
 
-        sc.close();
         return text;
     }
 }

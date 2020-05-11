@@ -1,9 +1,13 @@
 package tugas2;
 
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -47,8 +51,9 @@ public class ConfirmClose {
         VBox vb = new VBox(10);
         vb.getChildren().addAll(label_1, label_2, hb);
         vb.setAlignment(Pos.CENTER);
+        vb.setBackground(new Background(new BackgroundFill(Color.valueOf("#134f5c"), CornerRadii.EMPTY, Insets.EMPTY)));
 
-        Scene sceneClose = new Scene(vb, 360, 180, Color.valueOf("#e09b00"));
+        Scene sceneClose = new Scene(vb, 360, 180, Color.valueOf("#e6a01e"));
         sceneClose.getStylesheets().add(getClass().getResource("StyleSheet.css").toExternalForm());
 
         close.setScene(sceneClose);
