@@ -1,0 +1,40 @@
+#labelClose {
+	-fx-font-family: "Trebuchet MS";
+	-fx-font-size: 16;
+	-fx-font-weight: bold;
+	-fx-text-fill: rgb(63, 63, 63);
+}
+
+#buttonClose {
+	-fx-font-family: "Century Gothic";
+	-fx-font-size: 14;
+	-fx-font-weight: bold;
+	-fx-background-color: #dda918;
+	-fx-background-radius: 10;
+	-fx-text-fill: rgb(43, 43, 43);
+	-fx-border-width: 3;
+	-fx-border-radius: 11;
+	-fx-border-insets: -3;
+	-fx-border-color: rgb(43, 43, 43);
+}
+
+#selectFile {
+	-fx-font-family: "arial";
+	-fx-font-size: 18;
+	-fx-font-weight: bold;
+	-fx-background-color: #cecece;
+	-fx-background-radius: 12;
+	-fx-border-insets: -3;
+	-fx-border-width: 4;
+	-fx-border-radius: 12;
+	-fx-border-color: rgb(230, 230, 230);
+	-fx-text-fill: rgb(43, 43, 43);
+}
+
+#textArea {
+	-fx-font-family: "courier new";
+	-fx-font-size: 12;
+	-fx-font-weight: bold;
+	-fx-text-fill: rgb(49, 49, 49);
+	-fx-prompt-text-fill: rgb(150, 150, 150);
+}
